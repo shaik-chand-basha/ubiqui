@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: rgb(18, 16, 16);
+}
+a:hover{
+  color:#3d7974;
+}
+.header {
+  margin-top: 0.3em;
+  margin-bottom: 0.1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+}
+.header .logo {
+}
+.header .search {
+  position: relative;
+  left: 32%;
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+}
+.main .nav-bar {
+  background-color: black;
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+}
+.nav-bar ul {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4{
+ max-width: 100%;
+ min-width: 100%;
+ min-height: 95vh;
+}
+.section-1 {
+  background-image: url("https://source.unsplash.com/random/1600x900/?healthcare");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-1 .box {
+  background-color: white;
+  width: 70vh;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 6rem 4rem;
+  text-align: center;
+}
+.section-1 .gg-arrow-right {
+  background-color: gray;
+  transform: scale(var(--ggs, 1));
+  border: white;
+  padding: 4px;
+  cursor: pointer;
+}
+.section-1 .gg-arrow-right:hover {
+  background-color: rgba(128, 128, 128, 0.386);
+}
+.section-1 .gg-arrow-right::before {
+  background-color: white;
+}
+.section-1 .gg-arrow-right::after {
+  border-color: white;
+}
+hr {
+  width: 2rem;
+  margin: 0 auto;
+}
+.section-1 .box button {
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.9rem;
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.box button:hover {
+  background-color: rgb(92, 90, 90);
+}
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 img {
+  width: 500px;
+  height: 400px;
+
+  box-shadow: -1px 0px 17px 5px rgb(92, 90, 90);
+  margin-right: 50px;
+}
+.section-2 .right {
+  width: 40%;
+  padding: 50px;
+}
+.section-2 .right button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.section-2 .right button:hover {
+  background-color: rgb(92, 90, 90);
+}
+.section-2 .right h2 {
+  display: inline-block;
+  font-size: 40px;
+}
+.section-2 .right h2 hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.section-2 .right p {
+  line-height: 30px;
+  overflow-y: clip;
+  max-height: 123px;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-3 .bottom {
+  display: flex;
+
+  max-width: 80%;
+  margin: 2rem auto;
+}
+
+.section-3 .bottom .box {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 10px;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+.section-3 .bottom .box::before {
+  display: flex;
+  content: "1";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  top: -6px;
+  left: -6px;
+  border: 5px solid white;
+}
+.section-3 .bottom .box strong p {
+  margin: 5px auto;
+  font-weight: 100;
+  color: rgb(165, 163, 163);
+  font-size: 0.9rem;
+}
+.section-4 {
+  display:grid;
+  grid-template-columns:70% 20%;
+  /* overflow-y:scroll;
+  scrollbar-width: none; */
+}
+.section-4 .left{
+  width:80%;
+  margin-left:auto;
+  display:grid;
+  grid-template-columns:50% 47%;
+  justify-content: center;
+}
+.section-4 .left .box{
+  width:350px;
+  height:500px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  background-color:black;
+  color:white;
+  margin-bottom:1rem;
+}
+.section-4 .left .box a{
+  color:white;
+}
+.section-4 .left .box  p{
+  color:gray;
+  font-size:14px;
+  letter-spacing:2px;
+}
+.section-4 .left .box button{
+  width:fit-content;
+  padding:10px 20px;
+  border:none;
+  font-size:1rem;
+  background-color:transparent;
+  color:white;
+  outline:1px solid rgb(109, 109, 109);
+  align-self:center;
+  cursor:pointer;
+  margin-bottom:10px;
+  font-family:'Courier New', Courier, monospace;
+}
+.section-4 .left .box button:hover{
+  outline:1px solid rgb(255, 255, 255);
+}
+.section-4 .left .page-numbers{
+  grid-column:span 2;
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+}
+.section-4 .left .page-numbers p:first-child{
+  background-color:black;
+  color:white;
+ 
+  padding:20px;
+  border-radius:100%;
+}
+.section-4 .left .page-numbers p{
+  width:30px;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:10px;
+
+}
+.section-4 .left .page-numbers p+div{
+  position:relative;
+  top:5px;
+}
+.section-4 .left .gg-arrow-right{
+ 
+}
+.section-4 .right{
+
+}
+.section-4 .right .posts{
+  height:50%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:space-evenly;
+  text-align:left;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:white;
+  margin-bottom:40px;
+}
+.section-4 .right .posts h2{
+  font-size:1rem;
+}
+.section-4 .right .posts hr{
+  background-color:black;
+  margin-top:10px;
+}
+.section-4 .right .posts a+hr{
+ width:100%;
+ opacity:0.1;
+}
+.section-4 .right .popular-artilces h2{
+  font-size:1rem;
+  text-align:center;
+
+}
+.section-4 .right .popular-artilces h2 hr{
+  margin-top:10px;
+}
+.section-4 .right ul li{
+  list-style-type:none;
+  margin-top:1rem;
+}
